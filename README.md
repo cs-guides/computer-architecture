@@ -6,8 +6,8 @@ These notes have been adapted from the [Essentials of Computer Architecture, 2nd
 
 ## Topics
 
-- [ ] Basics
-- [ ] Processors
+- [ ] Basics 
+- [ ] [Processors](/docs/processors/README.md)
 - [ ] Memories
 - [ ] Input and Output
 
