@@ -1,0 +1,489 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>CPUs · Computer Architecture</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="assembly-languages.html" />
+    
+    
+    <link rel="prev" href="operand-addressing-and-instruction-representation.md" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../introduction/fundamentals-of-digital-logic.md">
+            
+                <span>
+            
+                    
+                    Fundamentals Of Digital Logic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../introduction/data-and-program-representation.md">
+            
+                <span>
+            
+                    
+                    Data And Program Representation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Processors
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="variety-of-processors-and-computational-engines.md">
+            
+                <span>
+            
+                    
+                    Variety Of Processors And Computational Engines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="processor-types-and-instruction-sets.md">
+            
+                <span>
+            
+                    
+                    Processor Types And Instruction Sets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="data-paths-and-instruction-execution.md">
+            
+                <span>
+            
+                    
+                    Data Paths And Instruction Execution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="operand-addressing-and-instruction-representation.md">
+            
+                <span>
+            
+                    
+                    Operand Addressing And Instruction Representation 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="cpus.html">
+            
+                <a href="cpus.html">
+            
+                    
+                    CPUs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="assembly-languages.html">
+            
+                <a href="assembly-languages.html">
+            
+                    
+                    Assembly Languages
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../memories/README.md">
+            
+                <span>
+            
+                    
+                    Memories
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../memories/memory-and-storage.md">
+            
+                <span>
+            
+                    
+                    Memory And Storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../memories/physical-memory-and-physical-addressing.md">
+            
+                <span>
+            
+                    
+                    Physical Memory And Physical Addressing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../glossary.md">
+            
+                <span>
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >CPUs</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="cpus">CPUs</h1>
+<p>Central Processing Unit (CPU) manages the entire computer by performing calculations, controlling I/O, and telling other processors what to do.</p>
+<p>Modern CPUs are very complex, containing billions of transistors to achieve high performance.</p>
+<ul>
+<li>Multiple cores</li>
+<li>Multiple roles</li>
+<li>Protection and Privilege</li>
+<li>Hardware Priorities</li>
+<li>Generality</li>
+<li>Data size</li>
+<li>High speed</li>
+</ul>
+<p>The hardware for CPUs have different modes of execution to handle complex operations and features. Items commonly associated with CPU mode of execution include:</p>
+<ul>
+<li>the subset of instructions that are valid</li>
+<li>the size of data items </li>
+<li>the region of memory that can be accessed</li>
+<li>the functional units that are available</li>
+<li>the amount of privilege</li>
+</ul>
+<h3 id="modes-of-execution">Modes of Execution</h3>
+<p>There are two ways the CPU can change execution modes:</p>
+<ul>
+<li>Automatic: initiated by hardware, like an I/O device</li>
+<li>Manual: mode changes under a running program, like the operating system</li>
+</ul>
+<p>Three different mechanism are used to change modes:</p>
+<ul>
+<li>CPU includes an instruction to set the current mode</li>
+<li>CPU contains a special-purpose mode register to control the mode (responds to the store command by changing the mode)</li>
+<li>the side-effect of another instruction can change the mode (e.g. an app makes an operating system call by using an instruction from a CPU instruction set)</li>
+</ul>
+<h3 id="privilege-and-protection">Privilege and Protection</h3>
+<p>CPUs can prevent unintentional or malicious changes with different levels of privilege that limit the operations that are allowed. CPUs that run apps have at least two levels of protection. The operating system has the highest privilege, and apps run with limited privilege.</p>
+<h3 id="microcode">Microcode</h3>
+<p>The CPU is built in two pieces:</p>
+<ul>
+<li>microcontroller: a small, fast processor </li>
+<li>microcode: software for the microcontroller to implement the CPU instruction set (macro instruction set)</li>
+</ul>
+<p><img src="../../imgs/figure-8.3.jpeg" alt="Figure 8.3 from Computer Architecture by Douglas Comer">
+(Figure 8.3 from the <a href="http://www.eca.cs.purdue.edu/CS250/ab.html" target="_blank">Essentials of Computer Architecture, 2nd Edition</a> textbook by Douglas E. Comer)</p>
+<p>The CPU decodes a macro instruction during instruction execution, then invokes the microcode that corresponds to the instruction. Macro and micro architectures can differ.</p>
+<p><img src="../../imgs/figure-8.4.jpeg" alt="Figure 8.4 from Computer Architecture by Douglas Comer">
+(Figure 8.4 from the <a href="http://www.eca.cs.purdue.edu/CS250/ab.html" target="_blank">Essentials of Computer Architecture, 2nd Edition</a> textbook by Douglas E. Comer)</p>
+<p>Microcode defines all aspects of the macro system, including the format of macro instructions. It also defines the form and encoding of each operand. </p>
+<p>Three advantages of using microcode:</p>
+<ul>
+<li>higher level abstraction </li>
+<li>building microcode takes less time than building circuits (also less prone to errors)</li>
+<li>new versions of CPU can be created faster since microcode is easier to change than hardware</li>
+</ul>
+<p>Disadvantages of using microcode:</p>
+<ul>
+<li>more overhead than implementing hardware: macro instructions take up multiple clock cycles</li>
+<li>executing multiple micro instructions for each macro instruction requires the microcontroller to run faster than the CPU</li>
+<li>cost of macro instruction relies on the micro instruction set</li>
+</ul>
+<h5 id="vertical-microcode">Vertical Microcode</h5>
+<p>A microcontroller needs to interacts with hardware components in the CPU like </p>
+<ul>
+<li>accessing the ALU </li>
+<li>storing results in general purpose registers, and</li>
+<li>coordination with other hardware units like memory</li>
+</ul>
+<p>A microcontroller has a vertical architecture if it consists of a RISC processor. </p>
+<p>Advantages</p>
+<ul>
+<li>one micro instruction is executed at a time for vertical microcode, which is the software that runs on the microcontroller </li>
+<li>vertical microcode&apos;s interface is easy for programmers to understand: uses conventional looking code</li>
+</ul>
+<p>Disadvantages</p>
+<ul>
+<li>hardware must operate at high speeds since only one micro instruction is executed at a time</li>
+<li>cannot utilize the parallelism of the underlying hardware</li>
+</ul>
+<h5 id="horizontal-microcode">Horizontal Microcode</h5>
+<p>Horizontal microcode allows hardware to run faster; however, it&apos;s more difficult to program.</p>
+<h3 id="field-programmable-gate-array-fpga">Field-programmable gate array (FPGA)</h3>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="operand-addressing-and-instruction-representation.md" class="navigation navigation-prev " aria-label="Previous page: Operand Addressing And Instruction Representation ">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="assembly-languages.html" class="navigation navigation-next " aria-label="Next page: Assembly Languages">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CPUs","level":"1.2.5","depth":2,"next":{"title":"Assembly Languages","level":"1.2.6","depth":2,"path":"docs/processors/assembly-languages.md","ref":"docs/processors/assembly-languages.md","articles":[]},"previous":{"title":"Operand Addressing And Instruction Representation ","level":"1.2.4","depth":2,"path":"docs/processors/operand-addressing-and-instruction-representation.md","ref":"docs/processors/operand-addressing-and-instruction-representation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["todo","katex"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"todo":{},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Computer Architecture","gitbook":"3.*.*"},"file":{"path":"docs/processors/cpus.md","mtime":"2017-03-12T02:46:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T18:10:24.808Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

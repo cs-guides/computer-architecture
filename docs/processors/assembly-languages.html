@@ -1,0 +1,478 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Assembly Languages · Computer Architecture</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../memories/README.md" />
+    
+    
+    <link rel="prev" href="cpus.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../introduction/fundamentals-of-digital-logic.md">
+            
+                <span>
+            
+                    
+                    Fundamentals Of Digital Logic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../introduction/data-and-program-representation.md">
+            
+                <span>
+            
+                    
+                    Data And Program Representation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Processors
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="variety-of-processors-and-computational-engines.md">
+            
+                <span>
+            
+                    
+                    Variety Of Processors And Computational Engines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="processor-types-and-instruction-sets.md">
+            
+                <span>
+            
+                    
+                    Processor Types And Instruction Sets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="data-paths-and-instruction-execution.md">
+            
+                <span>
+            
+                    
+                    Data Paths And Instruction Execution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="operand-addressing-and-instruction-representation.md">
+            
+                <span>
+            
+                    
+                    Operand Addressing And Instruction Representation 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="cpus.html">
+            
+                <a href="cpus.html">
+            
+                    
+                    CPUs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.6" data-path="assembly-languages.html">
+            
+                <a href="assembly-languages.html">
+            
+                    
+                    Assembly Languages
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../memories/README.md">
+            
+                <span>
+            
+                    
+                    Memories
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../memories/memory-and-storage.md">
+            
+                <span>
+            
+                    
+                    Memory And Storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../memories/physical-memory-and-physical-addressing.md">
+            
+                <span>
+            
+                    
+                    Physical Memory And Physical Addressing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../glossary.md">
+            
+                <span>
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Assembly Languages</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="assembly-languages">Assembly Languages</h1>
+<p>High-Level Language (HLL) has these characteristics:</p>
+<ul>
+<li>one-to-many translation: <ul>
+<li>each statement corresponds to multiple machine instructions</li>
+</ul>
+</li>
+<li>hardware independent: <ul>
+<li>programmers don&apos;t need to know details about underlying hardware</li>
+</ul>
+</li>
+<li>application orientated: <ul>
+<li>allows programmers to create application programs</li>
+<li>HHL includes I/O facilities and allow programmers to define complex data objects</li>
+</ul>
+</li>
+<li>general-purpose: <ul>
+<li>not restricted to a specific task</li>
+</ul>
+</li>
+<li>powerful abstractions: <ul>
+<li>allows programmers to express complex tasks </li>
+</ul>
+</li>
+</ul>
+<p>Low-Level Language has these characteristics:</p>
+<ul>
+<li>one-to-one translation: <ul>
+<li>each statement corresponds to one instruction in the underlying processor</li>
+</ul>
+</li>
+<li>hardware dependence: <ul>
+<li>low-level language created for one type of processor can&apos;t be used with another type of processor </li>
+</ul>
+</li>
+<li>systems programming orientation:<ul>
+<li>allows programmers to create software that can directly control the hardware</li>
+</ul>
+</li>
+<li>special-purpose: <ul>
+<li>low-level language is only used when control and efficiency is needed</li>
+</ul>
+</li>
+<li>few abstractions:<ul>
+<li>does not provide complex data structures or control statements</li>
+</ul>
+</li>
+</ul>
+<h3 id="assembly-language">Assembly Language</h3>
+<p>Assembly language is a low-level language. Since it uses the instruction set and operands from a specific processor, many assembly languages exist. However, many different assembly languages share the same structure.</p>
+<h5 id="statement-format">Statement Format</h5>
+<p>A single assembly language statement corresponds to one machine instruction. The general format is:</p>
+<p>label: opcode operand1, operand2, ...</p>
+<ul>
+<li>label is used for branching</li>
+<li>opcode specifies one possible instruction, separated by whitespace from other items</li>
+<li>operands are separated by commas </li>
+</ul>
+<h5 id="opcode-names">Opcode Names</h5>
+<p>Assembly Languages use short abbreviations like add or br (branching) </p>
+<h5 id="commenting-conventions">Commenting Conventions</h5>
+<p>Programmers often add comments after each line of assembly code to explain the purpose of the statement:</p>
+<p>ld r5,r3 # load the address of list into r5</p>
+<h5 id="operand-order">Operand Order</h5>
+<p>Operand order may change between assembly languages. In following statement, the first operand is the target register (the destination register), and the second operand is the source register:</p>
+<p>ld r5,r3 # load the address of list into r5</p>
+<p>Some assembly language specify the opposite order, where the target register is on the right:</p>
+<p>ld r3,r5 # load the address of list into r5</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="cpus.html" class="navigation navigation-prev " aria-label="Previous page: CPUs">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../memories/README.md" class="navigation navigation-next " aria-label="Next page: Memories">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Assembly Languages","level":"1.2.6","depth":2,"next":{"title":"Memories","level":"1.3","depth":1,"path":"docs/memories/README.md","ref":"docs/memories/README.md","articles":[{"title":"Memory And Storage","level":"1.3.1","depth":2,"path":"docs/memories/memory-and-storage.md","ref":"docs/memories/memory-and-storage.md","articles":[]},{"title":"Physical Memory And Physical Addressing","level":"1.3.2","depth":2,"path":"docs/memories/physical-memory-and-physical-addressing.md","ref":"docs/memories/physical-memory-and-physical-addressing.md","articles":[]}]},"previous":{"title":"CPUs","level":"1.2.5","depth":2,"path":"docs/processors/cpus.md","ref":"docs/processors/cpus.md","articles":[]},"dir":"ltr"},"config":{"plugins":["todo","katex"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"todo":{},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Computer Architecture","gitbook":"3.*.*"},"file":{"path":"docs/processors/assembly-languages.md","mtime":"2017-03-13T18:07:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T18:10:24.808Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
